@@ -21,18 +21,18 @@ pokemonButton.addEventListener ("click", ()=>{
     })
     .then ((data) =>{
 
-      const tipo = ""
+      let tipo = ""
       data.types.forEach(element => {
       const tipoName = element.type.name
-      tipo += tipoName
-      /* console.log(tipoName) */
+      tipo += tipoName + ", "
+      console.log(tipoName)
 
     });
     
     pokemonInfo.innerHTML = `
     <h3>Nombre: ${data.name}</h3>
     <img src="${data.sprites.front_default}" alt="${data.name}">
-    <h3>Tipo: ${data.types[0].type.name}</h3>
+    <h3>Tipo: ${tipo}</h3>
     <h3>Altura: ${data.height}</h3>
     <h3>Peso: ${data.weight}</h3>
     `;
