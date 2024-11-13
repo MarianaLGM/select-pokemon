@@ -30,7 +30,7 @@ pokemonButton.addEventListener ("click", ()=>{
     });
     
     pokemonInfo.innerHTML = `
-    <img src="${data.sprites.front_default}" alt="${data.name}">
+    <img src="${data.sprites.other["official-artwork"].front_default}" alt="${data.name}" id="pokemon">
     <h3>-Nombre: ${data.name}</h3>
     <h3>-Tipo: ${tipo}</h3>
     <h3>-Altura: ${data.height}</h3>

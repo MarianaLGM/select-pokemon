@@ -2,6 +2,8 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/vector-premium/espacio-copia-fondo-estilo-comic-plano_52683-55012.jpg?semt=ais_hybrid);
     background-size: 1600px;
 }
+
+/*botón bola pokemon*/
 #get-pokemon{
     width: 100px;
     height: 100px;
@@ -11,53 +13,56 @@ body{
     background-image: url();
     gap: 50px;
 }
-
+/*padre del desplegable-contenedor*/
+.pokemon-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*desplegable*/
 #pokemon-select{
     height: 50px;
-    width: 150px;
+    width: 120px;
     margin-right: 40px;
     font-size: 18px;
     font-family: monospace;
-    border-radius: 20px;
-    
+    border-radius: 20px;   
 }
 
 #get-pokemon:hover{
     transform: scale(1.5);  
 }
 
+
+/*titulo*/
 h1{
     font-family: monospace;
     color: white;
     font-size: 45px;
-    margin-left: 500px;
 }
 
-#logo{
-   margin-left: 350px;
-}
-
-
-#info-pokemon{
-    color: rgb(242, 237, 237); 
-    font-family: monospace;
-    margin-left: 650px;
-    margin-top: 30px;
+/*posición todo el contenedor*/
+.container{
     display: flex;
-   
-}
-
-
-.pokemon-form{
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+
+/*info que muestra del pokemon*/
 #info-pokemon{
+   color: rgb(242, 237, 237); 
+   font-family: monospace;
+   margin-top: 30px;
    font-size: 22px;
    font-family:monospace;
    display: block; 
-   
+  
 }
 
+/*imagen del pokemon*/
+
+#pokemon{
+    width: 150px;
+}
