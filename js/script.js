@@ -6,6 +6,7 @@
 
 const pokemonSelection= document.getElementById ("pokemon-select");
 const pokemonButton= document.getElementById ("get-pokemon");
+const pokemonInfo = document.getElementById("info-pokemon");
 
 pokemonButton.addEventListener ("click", ()=>{
   //console.log(pokemonSelection.value)
@@ -19,8 +20,14 @@ pokemonButton.addEventListener ("click", ()=>{
         return response.json ()
     })
     .then ((data) =>{
-        const pokemonData= (data)
-    console.log (data.name)
+    pokemonInfo.innerHTML = `
+    <h3>Nombre: ${data.name}</h3>
+    <img src="${data.sprites.front_default}" alt="${data.name}">
+    <h3>Tipo: ${data.types.name}</h3>
+    <h3>Altura: ${data.height}</h3>
+    <h3>Peso: ${data.weight}</h3>
+    `;
+    console.log("la altura es: " + data.height)
     })
   }
 )
