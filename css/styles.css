@@ -1,1 +1,24 @@
+body{
+    background-image: url(https://img.freepik.com/vector-premium/espacio-copia-fondo-estilo-comic-plano_52683-55012.jpg?semt=ais_hybrid);
+    background-size: 1600px;
+}
+#get-pokemon{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-family: monospace;
+    border-radius: 20px;
+    background-image: url(https://st2.depositphotos.com/5675002/11678/i/450/depositphotos_116786710-stock-photo-volumetric-image-pokeball-on-a.jpg);
+    gap: 50px;
+}
 
+#get-pokemon:hover{
+    transform: scale(1.5);
+   
+}
+
+h1{
+    font-family: monospace;
+    color: white;
+    font-size: 60px;
+}
