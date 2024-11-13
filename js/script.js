@@ -20,6 +20,7 @@ pokemonButton.addEventListener ("click", ()=>{
         return response.json ()
     })
     .then ((data) =>{
+    
     pokemonInfo.innerHTML = `
     <h3>Nombre: ${data.name}</h3>
     <img src="${data.sprites.front_default}" alt="${data.name}">
