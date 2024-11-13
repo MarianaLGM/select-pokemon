@@ -7,18 +7,22 @@ body{
     height: 50px;
     font-size: 18px;
     font-family: monospace;
-    border-radius: 20px;
+    border-radius: 120px;
     background-image: url(https://st2.depositphotos.com/5675002/11678/i/450/depositphotos_116786710-stock-photo-volumetric-image-pokeball-on-a.jpg);
     gap: 50px;
 }
 
 #get-pokemon:hover{
-    transform: scale(1.5);
-   
+    transform: scale(1.5);  
 }
 
 h1{
     font-family: monospace;
     color: white;
-    font-size: 60px;
+    font-size: 45px;
+    margin-left: 500px;
+}
+
+#logo{
+   margin-left: 350px;
 }
