@@ -20,6 +20,14 @@ pokemonButton.addEventListener ("click", ()=>{
         return response.json ()
     })
     .then ((data) =>{
+
+      const tipo = ""
+      data.types.forEach(element => {
+      const tipoName = element.type.name
+      tipo += tipoName
+      /* console.log(tipoName) */
+
+    });
     
     pokemonInfo.innerHTML = `
     <h3>Nombre: ${data.name}</h3>
@@ -28,8 +36,7 @@ pokemonButton.addEventListener ("click", ()=>{
     <h3>Altura: ${data.height}</h3>
     <h3>Peso: ${data.weight}</h3>
     `;
-    console.log("la altura es: " + data.height)
-    console.log(data.types)
+    
     })
   }
 )
