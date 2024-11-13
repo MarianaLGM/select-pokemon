@@ -1,15 +1,25 @@
 body{
-    background-image: url(https://img.freepik.com/vector-premium/espacio-copia-fondo-estilo-comic-plano_52683-55012.jpg?semt=ais_hybrid);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/vector-premium/espacio-copia-fondo-estilo-comic-plano_52683-55012.jpg?semt=ais_hybrid);
     background-size: 1600px;
 }
 #get-pokemon{
-    width: 150px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     font-size: 18px;
     font-family: monospace;
-    border-radius: 120px;
-    background-image: url(https://st2.depositphotos.com/5675002/11678/i/450/depositphotos_116786710-stock-photo-volumetric-image-pokeball-on-a.jpg);
+    border-radius: 320px;
+    background-image: url();
     gap: 50px;
+}
+
+#pokemon-select{
+    height: 50px;
+    width: 150px;
+    margin-right: 40px;
+    font-size: 18px;
+    font-family: monospace;
+    border-radius: 20px;
+    
 }
 
 #get-pokemon:hover{
@@ -26,3 +36,28 @@ h1{
 #logo{
    margin-left: 350px;
 }
+
+
+#info-pokemon{
+    color: rgb(242, 237, 237); 
+    font-family: monospace;
+    margin-left: 650px;
+    margin-top: 30px;
+    display: flex;
+   
+}
+
+
+.pokemon-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-pokemon{
+   font-size: 22px;
+   font-family:monospace;
+   display: block; 
+   
+}
+
